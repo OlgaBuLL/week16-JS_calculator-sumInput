@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/calculator-sumInput.css">
+</head>
+
+<body id="theme">
+
+    <select name="theme" id="theme-option" onchange="changeTheme()">
+        <option value="standard">Стандартная(белая)</option>
+        <option value="dark" id="dark">Темная</option>
+        <option value="gradient">Градиент</option>
+    </select>
+
+    <div class="content">
+        <h1>Calculator</h1>
+
+        <p>Введите число (для сохранения числа нажмите Enter):</p>
+
+        <input type="text" id="input">
+
+        <button class="result" id="result" onclick="sumInput()">Готово</button>
+
+        <div class="errorMessage" id="errorMessage"></div>
+        <div class="array"></div>
+        <div class="sort" id="sort"></div>
+        <div class="summ" id="summ"></div>
+
+        <button class="reset" id="reset" onclick="resetArray()"> Очистить массив</button>
+    </div>
+
+    <script src="scripts/calculator-sumInput.js"></script>
+</body>
+
+</html>
